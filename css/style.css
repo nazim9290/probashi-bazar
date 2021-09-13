@@ -51,9 +51,13 @@ header {
   border-radius: 10px;
   border: 1px solid cyan;
 }
+.product-info {
+  background-color: #e4f8ff;
+  padding: 10px;
+}
 .product-image {
   width: 150px;
-  height: 150px;
+  max-height: 150px;
 }
 .cart {
   width: 350px;
