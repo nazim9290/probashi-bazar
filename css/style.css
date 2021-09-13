@@ -2,6 +2,12 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -29,6 +35,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
+  grid-gap: 5px;
   text-align: center;
   width: 100%;
   margin: auto;
