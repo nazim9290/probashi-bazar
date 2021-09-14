@@ -89,6 +89,9 @@ main{
 .cart-main {
   padding-right: 30px;
 }
+#rating{
+  padding: 5px;
+}
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
