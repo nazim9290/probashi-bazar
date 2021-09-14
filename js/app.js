@@ -17,22 +17,20 @@ const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.image;
+   // console.log(image);
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `
-    <div class="single-product">
-      <div>
+    div.innerHTML = `<div class="single-product">
+      <div id="img-div">
     <img class="product-image" src=${image}></img>
       </div>
-      <div class="product-info">
-      <h3>${product.title}</h3>
+      <h3 id="title">${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h4>Price: $ ${product.price}</h4>
       <div><small>Rating: ${product.rating.rate} - ${product.rating.count} votes </small></div>
     
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Details</button></div>
-      </div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
